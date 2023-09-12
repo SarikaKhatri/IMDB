@@ -47,7 +47,7 @@ function clearSuggestions() {
 // Function to fetch movie data from OMDB API
 async function fetchMovieData(movieTitle) {
     try {
-        const response = await fetch(`http://www.omdbapi.com/?apikey=${apiKey}&&s=${movieTitle}`);
+        const response = await fetch(`https://www.omdbapi.com/?apikey=${apiKey}&&s=${movieTitle}`);
         const data = await response.json();
         return data.Search;
     } catch (error) {
