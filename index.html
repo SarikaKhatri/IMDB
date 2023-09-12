@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mini IMDb Clone</title>
+</head>
+<body>
+    
+    <a href="favorites.html" class="btn btn-block btn-link">View Favorites</a>
+    <!-- Inside the loop that displays search results -->
+    <div class="container mt-5">
+        <h1>Mini IMDb Clone</h1>
+        <div class="form-group">
+            <input type="text" id="search-input" class="form-control" placeholder="Search for a movie..." list="movie-suggestions">
+            <datalist id="movie-suggestions">
+                <!-- Suggestions will be displayed here -->
+            </datalist>
+        </div>
+        <div class="row" id="movie-list">
+            <!-- Movie list will be displayed here -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

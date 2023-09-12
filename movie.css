@@ -1,0 +1,43 @@
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+.movie-details-container {
+    width: 95%; /* Reduce card width to around 95% */
+    max-width: none;
+    margin: 20px auto; /* Center the card on the page */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+.movie-image-container {
+    flex: 1;
+    text-align: center; /* Center the image horizontally */
+}
+.movie-image {
+    max-width: 95%; /* Make the image cover 95% of the left part */
+    max-height: auto; /* Maintain the image's aspect ratio */
+    display: block; /* Remove default inline display */
+    margin: 0 auto; /* Center the image horizontally */
+}
+.movie-info {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+/* Additional details styles */
+.movie-info p {
+    font-size: 16px; /* Adjust font size as needed */
+    margin-bottom: 10px;
+}
+.movie-info h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.info-title {
+    font-weight: bold;
+}
