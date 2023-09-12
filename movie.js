@@ -7,7 +7,7 @@ const movieTitle = document.querySelector(".movie-title");
 // Function to fetch movie details from OMDB API
 async function fetchMovieDetails(imdbID) {
     try {
-        const response = await fetch(`http://www.omdbapi.com/?apikey=a57dc866&i=${imdbID}`);
+        const response = await fetch(`https://www.omdbapi.com/?apikey=a57dc866&i=${imdbID}`);
         const data = await response.json();
         return data;
     } catch (error) {
